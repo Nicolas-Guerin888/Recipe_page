@@ -14,10 +14,10 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main>
-        <img src="img/image-omelette.jpeg" alt="Image d'une recette d'omelette">
+    <main class="menu text-preset-4">
+        <img class="menu__img"  src="img/image-omelette.jpeg" alt="Image d'une recette d'omelette">
         <section class="title">
-            <h1>Simple Omelette Recipe</h1>
+            <h1 class="text-preset-1">Simple Omelette Recipe</h1>
             <p>
                 An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked 
                 to perfection, optionally filled with your choice of cheese, vegetables, or meats.              
@@ -25,16 +25,15 @@
         </section>
         <section class="preparation-time">
             <h2 class="sr-only">Preparation time</h2>
-            <h3>Preparation time</h3>
+            <h3 class="text-preset-3">Preparation time</h3>
             <ul>
                 <li><strong>Total:</strong> Approximately 10 minutes</li>
                 <li><strong>Preparation:</strong> 5 minutes</li>
                 <li><strong>Cooking:</strong> 5 minutes</li>
             </ul>
-            <hr>
         </section>
         <section class="ingredients">
-            <h2>Ingredients</h2>
+            <h2 class="text-preset-2">Ingredients</h2>
             <ul>
                 <li>2-3 large eggs</li>
                 <li>Salt, to taste</li>
@@ -45,7 +44,7 @@
         </section>
         <hr>
         <section class="instructions">
-            <h2>Instructions</h2>
+            <h2 class="text-preset-2">Instructions</h2>
             <ol>
                 <li>
                     <strong>Beat the eggs:</strong> In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. 
@@ -71,22 +70,33 @@
                 </li>
             </ol>
         </section>
+        <hr class="layout-only">
         <section class="nutrition">
-            <h2>Nutrition</h2>
+            <h2 class="text-preset-2">Nutrition</h2>
             <p>
                 The table below shows nutritional values per serving without the additional fillings.
             </p>
-            <div>Calories</div>
-            <div>277kcal</div>
-            <hr>  
-            <div>Carbs</div>
-            <div>0g</div>
-            <hr>
-            <div>Protein</div>
-            <div>20g</div>
-            <hr>
-            <div>Fat</div>
-            <div>22g</div>          
+            <div class="nutrition__container">
+                <div class="nutrition__container-list">
+                    <div>Calories</div>
+                    <div><strong>277kcal</strong></div>    
+                </div>
+                <hr class="nutrition__hr">
+                <div class="nutrition__container-list">
+                    <div>Carbs</div>
+                    <div><strong>0g</strong></div>    
+                </div>  
+                <hr class="nutrition__hr">
+                <div class="nutrition__container-list">
+                    <div>Protein</div>
+                    <div><strong>20g</strong></div>    
+                </div>
+                <hr class="nutrition__hr">
+                <div class="nutrition__container-list">
+                    <div>Fat</div>
+                    <div><strong>22g</strong></div>              
+                </div>    
+            </div>
         </section>
     </main>
     <footer>

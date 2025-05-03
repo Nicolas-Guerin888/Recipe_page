@@ -1,0 +1,131 @@
+body {
+    padding-top: var(--spacing-1600);
+    padding-bottom: var(--spacing-1600);
+    background-color: var(--stone-100);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+
+strong {
+    font-weight: bold;
+}
+
+.menu {
+    width: 736px;
+    border-radius: 24px;
+    background-color: var(--white);
+    padding: var(--spacing-500);
+}
+
+.menu__img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: var(--spacing-500);
+}
+
+.preparation-time {
+    padding: var(--spacing-300);
+}
+
+.preparation-time ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.preparation-time ul li::marker {
+    color: var(--rose-800);
+}
+
+.ingredients ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.ingredients ul li::marker {
+    color: var(--brown-800);
+}
+
+.instructions ol {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.instructions ol li::marker {
+    color: var(--brown-800);
+    font-weight: bold;
+}
+
+.layout-only {
+    border: none;
+}
+
+.nutrition p {
+    margin-bottom: var(--spacing-300);
+}
+
+.nutrition__container {
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.nutrition__container-list {
+    display: flex;
+    flex-direction: row;
+}
+
+.nutrition__hr {
+    margin: var(--spacing-150) 0 var(--spacing-150) 0;
+}
+
+.nutrition__container-list div {
+    width: 50%;
+    padding-left: var(--spacing-300);
+}
+
+.nutrition strong {
+    color: var(--brown-800);
+}
+
+footer {
+    margin-top: var(--spacing-200);
+}
+
+@media (max-width: 880px) {
+    .menu {
+        width: 80%;
+    }
+}
+
+@media (max-width: 500px) {
+    body {
+        padding-top: 0;
+        padding-bottom: 0;
+    }    
+
+    .menu {
+        width: 100%;
+        border-radius: 0;
+        padding: var(--spacing-400);
+    }
+
+    .menu__img {
+        margin: -40px -40px var(--spacing-500) -40px;
+        border-radius: 0;
+    }
+
+    .text-preset-1 {
+        font-size: 32px;
+    }
+
+    footer {
+        margin-bottom: var(--spacing-200);
+    }
+}
