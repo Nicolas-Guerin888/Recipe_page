@@ -98,6 +98,13 @@ footer {
     margin-top: var(--spacing-200);
 }
 
+footer p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 @media (max-width: 880px) {
     .menu {
         width: 80%;
